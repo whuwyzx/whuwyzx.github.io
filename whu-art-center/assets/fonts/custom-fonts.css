@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/CustomFont.woff2') format('woff2'),
+         url('../fonts/CustomFont.woff') format('woff'),
+         url('../fonts/CustomFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'CustomFont', serif;
+}
