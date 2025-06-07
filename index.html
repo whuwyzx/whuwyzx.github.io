@@ -4,46 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>武汉大学文艺中心</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/fonts/custom-fonts.css">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">武汉大学文艺中心</a>
-            <ul class="nav-menu">
-                <li class="nav-item active" data-page="overview">中心概览</li>
-                <li class="nav-item" data-page="departments">部门介绍</li>
-                <li class="nav-item" data-page="activities">活动掠影</li>
-                <li class="nav-item" data-page="feedback">意见反馈</li>
+    <header>
+        <div class="logo">
+            <img src="images/logo/logo.png" alt="武汉大学文艺中心 Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="pages/about.html">关于我们</a></li>
+                <li><a href="pages/events.html">活动</a></li>
+                <li><a href="pages/departments/dance.html">舞蹈</a></li>
+                <li><a href="pages/departments/music.html">音乐</a></li>
+                <li><a href="pages/departments/drama.html">戏剧</a></li>
+                <li><a href="pages/departments/calligraphy.html">书法</a></li>
+                <li><a href="pages/departments/photography.html">摄影</a></li>
+                <li><a href="pages/feedback.html">意见反馈</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <!-- 主要内容区 -->
-    <main class="main-content">
-        <!-- 页面内容将通过JavaScript动态加载 -->
-        <div id="page-container">
-            <!-- 默认显示概览页面 -->
-            <div id="overview" class="page active">
-                <!-- 内容将从pages/overview.html加载 -->
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>欢迎来到武汉大学文艺中心</h1>
+            <p>探索我们的艺术与文化活动，参与我们的各类课程和活动。</p>
+        </section>
+        
+        <section class="departments-overview">
+            <h2>部门介绍</h2>
+            <div class="departments">
+                <div class="department">
+                    <h3><a href="pages/departments/dance.html">舞蹈</a></h3>
+                    <p>舞蹈部门致力于培养学生的舞蹈艺术素养。</p>
+                </div>
+                <div class="department">
+                    <h3><a href="pages/departments/music.html">音乐</a></h3>
+                    <p>音乐部门提供多种音乐课程，涵盖各类乐器和声乐。</p>
+                </div>
+                <div class="department">
+                    <h3><a href="pages/departments/drama.html">戏剧</a></h3>
+                    <p>戏剧部门专注于戏剧表演和创作。</p>
+                </div>
+                <div class="department">
+                    <h3><a href="pages/departments/calligraphy.html">书法</a></h3>
+                    <p>书法部门传承和推广中国传统书法艺术。</p>
+                </div>
+                <div class="department">
+                    <h3><a href="pages/departments/photography.html">摄影</a></h3>
+                    <p>摄影部门提供摄影技巧培训和实践机会。</p>
+                </div>
             </div>
-            <div id="departments" class="page">
-                <!-- 内容将从pages/departments.html加载 -->
-            </div>
-            <div id="activities" class="page">
-                <!-- 内容将从pages/activities.html加载 -->
-            </div>
-            <div id="feedback" class="page">
-                <!-- 内容将从pages/feedback.html加载 -->
-            </div>
-        </div>
+        </section>
     </main>
 
-    <!-- JavaScript文件 -->
-    <script src="js/navigation.js"></script>
-    <script src="js/feedback.js"></script>
-    <script src="js/main.js"></script>
+    <footer>
+        <p>&copy; 2023 武汉大学文艺中心. 保留所有权利.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/feedback.js"></script>
 </body>
 </html>
