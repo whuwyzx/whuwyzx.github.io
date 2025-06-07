@@ -1,69 +1,29 @@
-# 武汉大学文艺中心官网
+# 武汉大学文艺中心项目
 
-欢迎访问武汉大学文艺中心官网项目！本项目旨在为用户提供一个全面了解文艺中心及其各个部门的在线平台。
+## 项目简介
+武汉大学文艺中心项目旨在为全校师生提供丰富多彩的文艺活动和高品质的艺术体验。该项目包含多个页面，展示中心的概览、部门介绍、活动掠影以及意见反馈功能。
 
-## 项目结构
-
-```
-whu-art-center
-├── assets
-│   ├── css
-│   │   ├── main.css          # 主样式文件
-│   │   └── responsive.css     # 响应式样式文件
-│   ├── js
-│   │   ├── feedback.js       # 意见反馈功能的JavaScript文件
-│   │   └── main.js           # 主JavaScript文件
-│   └── fonts
-│       └── custom-fonts.css  # 自定义字体样式文件
-├── images
-│   ├── logo                  # 文艺中心logo
-│   ├── carousel              # 活动轮播图
-│   ├── departments           # 各部门相关图片
-│   └── events                # 活动相关图片
-├── pages
-│   ├── departments           # 各部门介绍页面
-│   │   ├── dance.html
-│   │   ├── music.html
-│   │   ├── drama.html
-│   │   ├── calligraphy.html
-│   │   └── photography.html
-│   ├── events.html           # 活动掠影页面
-│   ├── about.html            # 中心概览页面
-│   └── feedback.html         # 意见反馈页面
-├── index.html                # 网站主页
-├── .gitignore                # 版本控制忽略文件
-└── README.md                 # 项目文档
-```
+## 文件结构
+- `index.html`: 应用程序的主HTML文件，包含页面的基本结构和内容。
+- `css/`: 存放所有CSS样式文件。
+  - `main.css`: 全局样式，设置页面的基本样式和布局。
+  - `navbar.css`: 导航栏的样式，包括导航项的样式和悬停效果。
+  - `overview.css`: 中心概览页面的特定样式。
+  - `departments.css`: 部门介绍页面的特定样式。
+  - `activities.css`: 活动掠影页面的特定样式。
+  - `feedback.css`: 意见反馈页面的特定样式。
+- `js/`: 存放所有JavaScript文件。
+  - `main.js`: 主JavaScript文件，负责初始化页面和处理全局功能。
+  - `navigation.js`: 处理导航栏的交互功能，包括页面切换和活动状态管理。
+  - `departments.js`: 处理部门介绍页面的子导航功能，控制不同部门内容的显示和隐藏。
+  - `feedback.js`: 处理意见反馈表单的提交功能，包括表单验证和数据存储。
+- `assets/`: 存放项目的静态资源。
+  - `favicon.ico`: 网站的图标文件，用于浏览器标签页显示。
 
 ## 使用说明
-
-1. 克隆此项目到本地：
-   ```
-   git clone https://github.com/yourusername/whu-art-center.git
-   ```
-
-2. 进入项目目录：
-   ```
-   cd whu-art-center
-   ```
-
-3. 打开 `index.html` 文件以查看网站。
-
-## 部署信息
-
-本项目可以通过 GitHub Pages 部署。请确保将项目推送到 GitHub 后，按照以下步骤进行设置：
-
-1. 在 GitHub 仓库中，进入 "Settings"。
-2. 滚动到 "GitHub Pages" 部分。
-3. 选择 `main` 分支作为源，并保存。
+1. 将项目克隆到本地。
+2. 使用浏览器打开 `index.html` 文件以查看项目。
+3. 根据需要修改CSS和JavaScript文件以实现自定义功能。
 
 ## 贡献
-
-欢迎任何形式的贡献！请提交问题或拉取请求。
-
-## 联系方式
-
-如有任何问题或建议，请通过以下方式与我们联系：
-- 邮箱: contact@whu-art-center.edu.cn
-
-感谢您的访问与支持！
+欢迎任何形式的贡献！请提交问题或拉取请求以帮助改进项目。
