@@ -31,6 +31,20 @@ async function loadComponents() {
             console.error('加载导航栏组件失败:', error);
         }
     }
+
+    // 加载页脚
+    const footerPlaceholder = document.getElementById('footer-placeholder');
+    if (footerPlaceholder) {
+        try {
+            const response = await fetch('/components/footer.html');
+            const html = await response.text();
+            footerPlaceholder.innerHTML = html;
+        } catch (error) {
+            console.error('加载页脚组件失败:', error);
+        }
+    }
+
+    
 }
 
 // 页面加载完成后执行
