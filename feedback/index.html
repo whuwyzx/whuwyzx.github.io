@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>意见反馈</title>
+    <link rel="icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <!-- 意见反馈页面 -->
+        <div id="feedback" class="page active">
+            <h2 style="text-align: center; color: #8B4A9B; margin-bottom: 2rem;">意见反馈</h2>
+            
+            <div class="feedback-form">
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label class="form-label" for="name">姓名 *</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="email">邮箱</label>
+                        <input type="email" id="email" name="email" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="category">反馈类型 *</label>
+                        <select id="category" name="category" class="form-input" required>
+                            <option value="">请选择</option>
+                            <option value="suggestion">建议意见</option>
+                            <option value="complaint">投诉举报</option>
+                            <option value="praise">表扬鼓励</option>
+                            <option value="question">咨询问题</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="content">详细内容 *</label>
+                        <textarea id="content" name="content" class="form-textarea" placeholder="请详细描述您的意见或建议..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">提交反馈</button>
+                </form>
+                
+                <div id="successMessage" class="success-message">
+                    感谢您的反馈！我们已收到您的意见，会认真处理并及时回复。
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/components.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>部门介绍</title>
+    <link rel="icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <!-- 部门介绍页面 -->
+        <div id="departments" class="page active">
+            <h2 style="text-align: center; color: #8B4A9B; margin-bottom: 2rem;">部门介绍</h2>
+            
+            <div class="sub-nav">
+                <div class="sub-nav-item active" data-dept="dept1">综合联络项目组</div>
+                <div class="sub-nav-item" data-dept="admin">新媒体运营项目组</div>
+                <div class="sub-nav-item" data-dept="performance">美育工坊项目组</div>
+                <div class="sub-nav-item" data-dept="creative">文艺梦工厂项目组</div>
+            </div>
+
+            <!-- 中心领导 -->
+            <div id="dept1" class="dept-content">
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-image">👨‍💼</div>
+                        <div class="staff-info">
+                            <div class="staff-name">张文华</div>
+                            <div class="staff-position">中心主任</div>
+                            <div class="staff-bio">资深艺术教育家，从事文艺工作30余年，致力于推动校园文化艺术发展，曾获得多项文艺工作先进个人荣誉。</div>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-image">👩‍💼</div>
+                        <div class="staff-info">
+                            <div class="staff-name">李雅琴</div>
+                            <div class="staff-position">副主任</div>
+                            <div class="staff-bio">音乐学博士，专注于音乐教育和艺术推广，擅长声乐指导和合唱团管理，为中心的音乐活动贡献了重要力量。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 行政部门 -->
+            <div id="admin" class="dept-content" style="display: none;">
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-image">👨‍💻</div>
+                        <div class="staff-info">
+                            <div class="staff-name">王志强</div>
+                            <div class="staff-position">办公室主任</div>
+                            <div class="staff-bio">负责中心日常行政管理工作，协调各部门活动安排，具有丰富的组织管理经验。</div>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-image">👩‍💻</div>
+                        <div class="staff-info">
+                            <div class="staff-name">陈美玲</div>
+                            <div class="staff-position">财务主管</div>
+                            <div class="staff-bio">负责中心财务管理和预算规划，确保各项文艺活动资金的合理配置和使用。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 演出部 -->
+            <div id="performance" class="dept-content" style="display: none;">
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-image">🎭</div>
+                        <div class="staff-info">
+                            <div class="staff-name">刘艺博</div>
+                            <div class="staff-position">演出部主任</div>
+                            <div class="staff-bio">戏剧导演专业出身，擅长舞台剧策划和导演工作，曾指导多部校园原创剧目获得好评。</div>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-image">🎪</div>
+                        <div class="staff-info">
+                            <div class="staff-name">赵小凤</div>
+                            <div class="staff-position">舞蹈指导</div>
+                            <div class="staff-bio">专业舞蹈演员出身，负责各类文艺演出的舞蹈编排和指导工作，风格多样，技艺精湛。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 创作部 -->
+            <div id="creative" class="dept-content" style="display: none;">
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-image">✍️</div>
+                        <div class="staff-info">
+                            <div class="staff-name">孙文轩</div>
+                            <div class="staff-position">创作部主任</div>
+                            <div class="staff-bio">文学创作专家，主要负责原创剧本创作和文学活动策划，作品多次在省市级比赛中获奖。</div>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-image">🎨</div>
+                        <div class="staff-info">
+                            <div class="staff-name">马慧敏</div>
+                            <div class="staff-position">美术设计师</div>
+                            <div class="staff-bio">负责演出舞美设计、宣传海报制作等视觉设计工作，具有敏锐的艺术感知力和创新能力。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/components.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>
+
