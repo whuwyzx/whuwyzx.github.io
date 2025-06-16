@@ -162,7 +162,7 @@ body {
 
 /* 主要内容区 */
 .main-content {
-    margin-top: 80px;
+    /* margin-top: 80px; 与导航栏高度相匹配 */
     /* min-height: calc(100vh - 80px); */
     min-height: 0;
     padding: 2rem;
