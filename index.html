@@ -8,8 +8,6 @@
     <title>武汉大学文艺中心</title>
     <link rel="icon" href="/assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
-
-
 </head>
 <body>
     <!-- 导航栏 -->
@@ -17,14 +15,66 @@
 
     <!-- 主要内容区 -->
     <main class="main-content">
+        <!-- 招募通知栏 -->
+        <div class="announcement-banner">
+            <div class="announcement-content">
+                <span class="hot-label">HOT</span>
+                <span class="announcement-text"><b>2025-2026学年 文艺中心【部门负责人】招募正式启动！</b></span>
+                <a href="https://future.whu.edu.cn/info/1007/118929.htm" class="announcement-link">立即报名 →</a>
+            </div>
+        </div>
+        
         <!-- 中心概览页面 -->
         <div id="overview" class="page active">
             <div class="hero">
                 <h1>武汉大学大学生文化艺术中心</h1>
-                <p>  武汉大学大学生文化艺术中心（简称文艺中心）为共青团武汉大学委员会下属文化艺术办公室唯一直属中心，由四大项目组及珞青艺术团组成。
-                    四大项目组分别为综合联络项目组、新媒体运营项目组、美育工坊项目组、文艺梦工厂项目组，珞青艺术团则包括合唱团、声乐团、当代舞团与话剧团。</p>
-                <p>  在文艺中心，精彩从不被定义。从十佳歌手大赛、十佳舞者大赛等系列十佳活动，到五四青春歌会、冬至跨年歌会、“音你闪耀”草坪歌会、本科生迎新晚会、
-                    “朝花夕拾”非遗文化系列活动等。文艺中心点亮珞珈学子的课余时光，为“最美大学”写下一个个生动的注脚。</p>
+                <p>武汉大学大学生文化艺术中心（简称文艺中心）为共青团武汉大学委员会下属文化艺术办公室唯一直属中心，
+                    由四大项目组及珞青艺术团组成。四大项目组分别为综合联络项目组、新媒体运营项目组、美育工坊项目组、文艺梦工厂项目组，珞青艺术团则包括合唱团、声乐团、当代舞团与话剧团。</p>
+            </div>
+            
+            <!-- 图片轮播 -->
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="/assets/activities/2025singer/main.jpg" alt="十佳歌手大赛">
+                        <div class="slide-caption">第十七届武汉大学十佳歌手</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/assets/activities/2024rap/main.jpg" alt="说唱夜">
+                        <div class="slide-caption">武汉大学首届说唱夜</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/assets/activities/winter/main.jpg" alt="冬至歌会">
+                        <div class="slide-caption">武汉大学冬至跨年歌会</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/assets/activities/2023dancer/main.jpg" alt="十佳舞者">
+                        <div class="slide-caption">2023年武汉大学十佳舞者大赛</div>
+                    </div>
+                    <!-- <div class="carousel-slide">
+                        <img src="/assets/carousel/slide5.jpg" alt="新耀珞珈">
+                        <div class="slide-caption">2024年武汉大学“新”耀珞珈新生歌手大赛</div>
+                    </div> -->
+                    <div class="carousel-slide">
+                        <img src="/assets/activities/2024singer/main.jpg" alt="十佳歌手">
+                        <div class="slide-caption">第十六届武汉大学十佳歌手大赛</div>
+                    </div>
+                </div>
+                
+                <button class="carousel-button prev-button">&lt;</button>
+                <button class="carousel-button next-button">&gt;</button>
+                
+                <div class="carousel-nav">
+                    <span class="carousel-dot active" data-index="0"></span>
+                    <span class="carousel-dot" data-index="1"></span>
+                    <span class="carousel-dot" data-index="2"></span>
+                    <span class="carousel-dot" data-index="3"></span>
+                    <span class="carousel-dot" data-index="4"></span>
+                </div>
+            </div>
+            
+            <div class="hero-bottom">
+                <p>在文艺中心，精彩从不被定义。从十佳歌手大赛、十佳舞者大赛等系列十佳活动，到五四青春歌会、冬至跨年歌会、"音你闪耀"草坪歌会、本科生迎新晚会、"朝花夕拾"非遗文化系列活动等。文艺中心点亮珞珈学子的课余时光，为"最美大学"写下一个个生动的注脚。</p>
             </div>
 
             <div class="features">
@@ -66,7 +116,6 @@
                 </div>
             </div>
         </div>
-
     </main>
 
     <!-- 页脚 -->
@@ -74,6 +123,6 @@
 
     <script src="/js/components.js"></script>
     <script src="/js/main.js"></script>
-
+    <script src="/js/index.js"></script>
 </body>
 </html>

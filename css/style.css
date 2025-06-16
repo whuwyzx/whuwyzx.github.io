@@ -1,6 +1,7 @@
 @import url('footer.css');
 @import url('nav.css');
 @import url('departments.css');
+@import url('index.css');
 
 * {
     margin: 0;
@@ -213,11 +214,14 @@ body {
     background-clip: text;
 }
 
-.hero p {
+.hero p, .hero-bottom p {
     font-size: 1.2rem;
     color: #666;
     max-width: 800px;
     margin: 0 auto;
+    text-align: justify; /* 两端对齐 */
+    text-indent: 2em;    /* 首行缩进 2 个字符 */
+    line-height: 1.8;    /* 增加行高提高可读性 */
 }
 
 .features {
