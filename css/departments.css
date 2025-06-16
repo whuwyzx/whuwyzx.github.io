@@ -1,3 +1,138 @@
+/* 部门介绍样式 */
+.department-intro {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.department-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.department-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #8B4A9B 0%, #B388C7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.department-logo img {
+    width: 80%;
+    height: auto;
+}
+
+.department-title h2 {
+    font-size: 1.8rem;
+    color: #8B4A9B;
+    margin: 0 0 0.3rem 0;
+}
+
+.department-motto {
+    font-style: italic;
+    color: #777;
+    font-size: 1.1rem;
+}
+
+.department-content {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.department-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* 部门特色 */
+.department-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.dept-feature {
+    background: rgba(139, 74, 155, 0.05);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.dept-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(139, 74, 155, 0.1);
+}
+
+.dept-feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.dept-feature-title {
+    font-weight: 600;
+    color: #8B4A9B;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.dept-feature-desc {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 部门成就 */
+.department-achievements {
+    background: linear-gradient(135deg, rgba(139, 74, 155, 0.05) 0%, rgba(179, 136, 199, 0.05) 100%);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #8B4A9B;
+}
+
+.department-achievements h3 {
+    color: #8B4A9B;
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+}
+
+.department-achievements ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.department-achievements li {
+    margin-bottom: 0.7rem;
+    line-height: 1.5;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .department-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .department-achievements ul {
+        column-count: 1;
+    }
+    
+    .department-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* 职位标题样式 - 已有，可以保留 */
 .position-title {
     color: #8B4A9B;
