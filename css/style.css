@@ -1,4 +1,6 @@
 @import url('footer.css');
+@import url('nav.css');
+@import url('departments.css');
 
 * {
     margin: 0;
@@ -13,93 +15,155 @@ body {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
-/* 导航栏 */
-.navbar {
-    background: rgba(255, 255, 255, 0.95);
-    /* backdrop-filter: blur(10px); */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+/* 中心主任介绍样式 */
+.director-section {
+    margin: 3rem auto;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(139, 74, 155, 0.15);
+    max-width: 1200px; /* 添加最大宽度限制，与 .page 一致 */
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-/* 设置logo的容器，确保logo按水平排列 */
-.logo-container {
-    display: flex;
-    gap: 1rem; /* 设置logo之间的间距 */
-}
-
-/* 设置每个logo的大小 */
-.logo-img {
-    width: 50px; /* 控制logo的宽度 */
-    height: auto; /* 保持比例 */
-    object-fit: contain; /* 保证logo按比例缩放 */
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+.section-title {
+    text-align: center;
     color: #8B4A9B;
-    text-decoration: none;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 0.8rem;
 }
 
-.nav-menu {
+.section-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(45deg, #8B4A9B, #B388C7);
+}
+
+.director-card {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 2.5rem;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.director-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(139, 74, 155, 0.2);
+}
+
+.director-image {
     display: flex;
-    list-style: none;
-    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    background: linear-gradient(135deg, #f0e6f6 0%, #e6d0f2 100%);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.nav-item {
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    transition: all 0.3s ease;
+.director-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 300px;
+}
+
+.director-emoji {
+    font-size: 8rem;
+    text-align: center;
+}
+
+.director-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.director-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #8B4A9B;
+}
+
+.director-position {
+    font-size: 1.1rem;
     color: #666;
+    margin-bottom: 0.5rem;
     font-weight: 500;
 }
 
-/* 导航链接样式重置 */
-.nav-item a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
+.director-bio {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+    color: #555;
 }
 
-.nav-item:hover, .nav-item.active {
-    background: linear-gradient(45deg, #8B4A9B, #B388C7);
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(139, 74, 155, 0.3);
+.director-quote {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(139, 74, 155, 0.05);
+    border-left: 4px solid #8B4A9B;
+    border-radius: 0 10px 10px 0;
+    font-style: italic;
+    position: relative;
 }
 
-/* 确保链接的各种状态都不会改变样式 */
-.nav-item a:link,
-.nav-item a:visited,
-.nav-item a:hover,
-.nav-item a:active,
-.nav-item a:focus {
-    color: inherit;
-    text-decoration: none;
-    outline: none;
+.quote-mark {
+    font-size: 2rem;
+    color: rgba(139, 74, 155, 0.3);
+    font-family: 'Georgia', serif;
 }
+
+.quote-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0 0.2rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 900px) {
+    .director-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .director-image {
+        min-height: 250px;
+    }
+    
+    .director-emoji {
+        font-size: 6rem;
+    }
+    
+    .director-name {
+        font-size: 1.8rem;
+    }
+    
+    .director-quote {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+}
+
 
 /* 主要内容区 */
 .main-content {
     margin-top: 80px;
-    min-height: calc(100vh - 80px);
+    /* min-height: calc(100vh - 80px); */
+    min-height: 0;
     padding: 2rem;
 }
 
@@ -208,61 +272,6 @@ body {
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(139, 74, 155, 0.3);
-}
-
-/* 人员介绍卡片 */
-.staff-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.staff-card {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.staff-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(139, 74, 155, 0.2);
-}
-
-.staff-image {
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(45deg, #8B4A9B, #B388C7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 4rem;
-}
-
-.staff-info {
-    padding: 1.5rem;
-}
-
-.staff-name {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #8B4A9B;
-    margin-bottom: 0.5rem;
-}
-
-.staff-position {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-}
-
-.staff-bio {
-    color: #777;
-    font-size: 0.9rem;
-    line-height: 1.5;
 }
 
 /* 活动掠影 */

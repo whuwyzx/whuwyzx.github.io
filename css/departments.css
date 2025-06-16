@@ -1,0 +1,137 @@
+/* 职位标题样式 - 已有，可以保留 */
+.position-title {
+    color: #8B4A9B;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem 0;
+    position: relative;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid rgba(139, 74, 155, 0.3);
+}
+
+.position-title:first-child {
+    margin-top: 0.5rem;
+}
+
+/* 副主任和负责人使用的全宽卡片 */
+.staff-card-full {
+    display: grid;
+    grid-template-columns: 350px 1fr; /* 左侧固定宽度200px，右侧自适应 */
+    gap: 2rem;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.staff-card-full:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(139, 74, 155, 0.2);
+}
+
+/* 照片容器样式 */
+.staff-card-full .staff-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    max-height: 250px;
+    background: linear-gradient(135deg, #f0e6f6 0%, #e6d0f2 100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* 职委和干事使用的卡片 */
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.staff-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(139, 74, 155, 0.2);
+}
+
+/* 照片样式 */
+.staff-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    background: linear-gradient(135deg, #f0e6f6 0%, #e6d0f2 100%);
+}
+
+/* 真实照片样式 */
+.staff-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保照片填充空间但不变形 */
+    min-height: 200px;
+}
+
+/* Emoji替代照片的样式 */
+.staff-emoji {
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* 人员信息样式 */
+.staff-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.staff-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #8B4A9B;
+}
+
+.staff-position {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.staff-bio {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .staff-card-full {
+        grid-template-columns: 1fr; /* 小屏幕下改为垂直排列 */
+        gap: 1rem;
+    }
+    
+    .staff-card-full .staff-image {
+        min-height: 150px;
+    }
+    
+    .staff-grid {
+        grid-template-columns: 1fr; /* 小屏幕下一列显示 */
+    }
+}
